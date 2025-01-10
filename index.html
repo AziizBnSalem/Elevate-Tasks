@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="src/assets/styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Manager</h1>
+            <div class="search-filter">
+                <input type="text" id="searchInput" placeholder="Search Tasks" />
+                <select id="filterSelect">
+                    <option value="all">All</option>
+                    <option value="pending">Pending</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+        </header>
+
+        <main class="main-layout">
+            <section class="crud-form">
+                <h2>Add/Update a Task</h2>
+                <form id="taskForm">
+                    <label for="txttitle">Task Title</label>
+                    <input type="text" id="txttitle" placeholder="Task Title" required />
+                    <label for="txtdescription">Task Description</label>
+                    <textarea id="txtdescription" placeholder="Task Description"></textarea>
+                    <div class="button-group">
+                        <button type="submit" id="btnSaveTask" class="default">Save Task</button>
+                        <button type="reset" id="btnClearTask" class="default" disabled>Clear</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="task-lists">
+                <div class="task-section">
+                    <h2>Pending Tasks</h2>
+                    <div id="PendingTasks"></div>
+                </div>
+                <div class="task-section">
+                    <h2>Completed Tasks</h2>
+                    <div id="DoneTasks"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="dist/app.js" type="module"></script>
+</body>
+</html>
