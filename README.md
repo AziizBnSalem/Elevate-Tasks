@@ -50,8 +50,6 @@ Before running the project, make sure you have:
 - **Contributing**: Clear guidelines for contributors.
 - **License**: Mentions that the project is open-source under the MIT license.
 
-This README will serve as a comprehensive guide for users and contributors, providing them with all the necessary details about the project.
-
 
 
 
